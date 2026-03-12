@@ -1,9 +1,22 @@
+# Python 缓存
 __pycache__/
 *.pyc
+
+# 环境与日志
 .venv/
 env/
 .DS_Store
 *.log
+
+# Terraform 状态文件 (绝对不能传，包含云端密钥)
 terraform.tfstate
 terraform.tfstate.backup
 .terraform/
+
+# 项目特有：防止上传测试数据和本地日志
+uploads/
+airflow/logs/
+airflow/plugins/
+
+# 环境变量敏感文件
+.env
